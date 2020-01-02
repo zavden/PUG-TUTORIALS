@@ -1,0 +1,19 @@
+extends ../includes/template.pug
+block my_head
+    title Hola Mundo
+    style.
+        svg {
+            width:400px;
+            height:400px;
+        }
+
+block my_body
+    -
+        let x = 80 
+        let fill = "orange"
+    h1 Hola mundo
+    p Esto es un párrafo
+    div.
+        <svg viewBox="0 0 200 200">
+            <circle r="#{x}" cx="100" cy="100" fill="#{fill}"/>
+        </svg>
